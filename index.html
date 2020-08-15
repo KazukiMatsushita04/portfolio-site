@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazuki Matsushita</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h1>Kazuki Matsushita</h1>
+                <div class="header-menu"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#survice">Survice</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="about" class="animationTarget">
+                <h2 class="title">About</h2>
+                <div class="about_area">
+                    <div class="about_area-img">
+                        <img src="image/image1.jpeg" alt="">
+                    </div>
+                    <div class="about_area-decription">
+                        <div class="area-decription-text text">
+                            プログラミングやWEBマーケティング、WEB制作など、主にITに関する内容をメインに発信し、人生で得た経験や知識をアウトプットしています。
+                        </div>
+                        <div class="about_area-decription-icon">
+                            <a href="https://twitter.com/matsumatsu04">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://mtt-blog.com/">
+                                <i class="fas fa-rss-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="service" class="animationTarget">
+                <h2 class="title">Service</h2>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <h3>HTML5</h3>
+                        <div class="service-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <p class="text">
+                            HTML,CSS,Bootstrapのコーディングが可能です。
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3>CSS3</h3>
+                        <div class="service-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <p class="text">
+                            HTML,CSS,Bootstrapのコーディングが可能です。
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3>Bootstrap</h3>
+                        <div class="service-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <p class="text">
+                            HTML,CSS,Bootstrapのコーディングが可能です。
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="works" class="animationTarget">
+                <h2 class="title">Works</h2>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <img src="image/image0.jpeg" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="contact" class="animationTarget">
+                <h2 class="title">Contact</h2>
+                <div class="form">
+                    <!-- class, action, methodを変更しないでください -->
+                    <form class="formrun" action="https://form.run/api/v1/r/l02543bhu6ylzmrh3fdtkfz9" method="post">
+                        <!-- ↓自由に要素を追加・編集することができます -->
+                        <div class="form_content">
+                            <label>お名前</label>
+                            <input name="お名前" type="text">
+                        </div>
+
+                        <div class="form_content">
+                            <label>メールアドレス [必須]</label>
+                            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                        </div>
+
+                        <div class="form_content">
+                            <label>お問い合わせ [必須]</label>
+                            <textarea rows="10" name="お問い合わせ" data-formrun-required></textarea>
+                            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                        </div>
+
+                        <!-- <div>
+                            <label>個人情報利用同意 [必須]</label>
+                            <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+                            <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+                        </div> -->
+
+                        <!-- ボット投稿をブロックするためのタグ -->
+                        <div class="_formrun_gotcha">
+                            <style media="screen">
+                                ._formrun_gotcha {
+                                    position: absolute !important;
+                                    height: 1px;
+                                    width: 1px;
+                                    overflow: hidden;
+                                }
+                            </style>
+                            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                        </div>
+
+                        <button type="submit" data-formrun-error-text="未入力の項目があります"
+                            data-formrun-submitting-text="送信中...">送信</button>
+                    </form>
+
+                </div>
+            </section>
+            <div class="pagetop"><a href="#header"></a></div>
+
+        </div>
+    </main>
+    <footer>
+        &copy;2020 matsushita kazuki
+    </footer>
+</body>
+
+</html>
