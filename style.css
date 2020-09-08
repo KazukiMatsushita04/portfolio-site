@@ -52,7 +52,7 @@ header
      align-items: center;/*flex-directionで並べる際に、交差軸に対して子要素同士をどのような間隔で並べるかを指定するプロパティ*/
      padding: 16px 10px;
      z-index: 1;
-     background-color:white;
+     background-color:rgba(255, 255, 255, .9);
      position: absolute;
  }
  @keyframes titleAnimation{
@@ -122,7 +122,7 @@ top-image
   height: 100vh;
 }
 .box {
-  background: #fff;
+  background: rgba(255, 255, 255, .7);
   border-radius: 5px;
   padding: 5px;
   text-align: center;
