@@ -65,6 +65,7 @@ header
      margin: 0;
      animation: titleAnimation 1.5s;
      font-size: 60px;
+     color: #777474;
  }
  ul{
      margin: 0;
@@ -77,6 +78,7 @@ header
      padding: 16px;
      text-align: center;
      font-size: 24px;
+     color: #777474;
  }
  li a{
      color: black;
@@ -128,6 +130,7 @@ top-image
   text-align: center;
   position: absolute;
   z-index: 1;
+  color: #777474;
 }
 a {
   color: rgb(138, 200, 207);
@@ -223,6 +226,7 @@ works
  .works-text{
      text-align: center;
      font-family: sans-serif;
+     color: #777474;
  }
    /* ------------------------------------
 contact
@@ -230,6 +234,7 @@ contact
  .form{
      width: 400px;
      margin: 0 auto 40px;
+     color: #777474;
  }
  .form_content{
      margin-bottom: 16px;
