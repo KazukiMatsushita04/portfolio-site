@@ -9,12 +9,29 @@
  .title{
      text-align: center;
      margin-bottom: 40px;
+     font-size: 45px;
+     color: #777474;
  }
+ h2{
+    position: relative;
+      }
+      
+ h2:before {
+        position: absolute;
+        bottom: -15px;
+        left: calc(50% - 30px);
+        width: 60px;
+        height: 5px;
+        content: '';
+        border-radius: 3px;
+        background: rgb(138, 200, 207);
+      }
  body{
     font-family: 'Lato', sans-serif;
  }
  .text{
     font-family: sans-serif;
+    color: #777474;
  }
  .animationTarget{
      opacity: 0;
@@ -33,7 +50,10 @@ header
      flex-wrap: wrap;/*子要素(フレックスアイテム)を一行に並べるか、複数行に並べるかを指定するプロパティ:フレックスアイテムが一行に収まらない時に複数行にする*/
      justify-content: space-between;/*flex-directionで並べる際に、(主軸に対して)子要素同士をどのような間隔で並べるかを指定するプロパティ:両端から均等に配置します*/
      align-items: center;/*flex-directionで並べる際に、交差軸に対して子要素同士をどのような間隔で並べるかを指定するプロパティ*/
-     padding: 16px 0;
+     padding: 16px 10px;
+     z-index: 1;
+     background-color:white;
+     position: absolute;
  }
  @keyframes titleAnimation{
      0%{
@@ -44,6 +64,7 @@ header
  h1{
      margin: 0;
      animation: titleAnimation 1.5s;
+     font-size: 60px;
  }
  ul{
      margin: 0;
@@ -55,6 +76,7 @@ header
  li{
      padding: 16px;
      text-align: center;
+     font-size: 24px;
  }
  li a{
      color: black;
@@ -63,7 +85,7 @@ header
 @media screen and (max-width:768px){
     h1{
         padding: 16px 0;
-        font-size: 24px;
+        font-size: 36px;
     }
     .header-menu{
         width: 100%;
@@ -74,7 +96,52 @@ header
     li{
         width: 50%;
         border: solid 1px #d8d8d8;
+        font-size: 16px
     }
+    .title{
+        font-size: 25px;
+    }
+}
+/* -------------------------------------
+top-image
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+/* Default Styling */
+.container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+a {
+  color: rgb(138, 200, 207);
+}
+.top-text{
+    font-size: 60px;
+}
+@media screen and (max-width:768px){
+    .top-text{
+        font-size: 36px;
+    }
+    .container-top {
+        height: 100vh;
+      }
 }
  /* ------------------------------------
 about
@@ -119,12 +186,27 @@ about
         width: 100%;
     }
  }
+   /* ------------------------------------
+skills
+ ------------------------------------*/
+ #skills h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777474;
+}
+.service-icon{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #777474;
+}
   /* ------------------------------------
 service
  ------------------------------------*/
  #service h3{
      text-align: center;
      margin-bottom: 40px;
+     color: #777474;
  }
  .service-icon{
      text-align: center;
@@ -190,7 +272,7 @@ pagetop-button
     position: fixed;
     bottom: 50px;
     right: 15px;
-    background-color: #333;
+    background-color: rgb(138, 200, 207);
     border-radius: 50%;
   }
   .pagetop a {
