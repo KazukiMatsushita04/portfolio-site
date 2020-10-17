@@ -145,6 +145,9 @@ a {
     .container-top {
         height: 100vh;
       }
+    .box{
+        margin-top: 200px;
+    }
 }
  /* ------------------------------------
 about
